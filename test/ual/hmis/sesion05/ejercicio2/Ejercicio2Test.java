@@ -11,7 +11,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 class Ejercicio2Test {
-
 	@ParameterizedTest
 	@CsvSource({"AAA, '123', false",
 				"NombreMuyLargooooooooooooParaElTesttttttttttttttttt, '1234', false",
