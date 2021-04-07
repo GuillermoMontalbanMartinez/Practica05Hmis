@@ -11,8 +11,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 
 class ejercicio9Test {
-
-	
 	@ParameterizedTest (name = "{index} => La lista 1 contiene {0} y la lista 2 contiene {1}. Como resultado se obtiene {2}")
 	@MethodSource("generateData")
 	
