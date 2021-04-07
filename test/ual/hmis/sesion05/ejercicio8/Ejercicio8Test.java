@@ -60,13 +60,11 @@ public class Ejercicio8Test {
 		
 	}
 	
-	
 	@Test
 	public void testVacio() {
 		Ferry f = new Ferry();
 		assertTrue(f.Vacio());
 	}
-	
 	
 	@ParameterizedTest 
 	@CsvSource({"10",
