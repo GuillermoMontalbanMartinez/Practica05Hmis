@@ -10,6 +10,9 @@ public class Ferry {
 	protected int pesoTotalVehiculos;
 	protected ArrayList<Vehiculo> vehiculos;
 
+	/**
+	 * Asignacion.
+	 */
 	public Ferry() {
 		this.vehiculos = new ArrayList<Vehiculo>();
 	}
