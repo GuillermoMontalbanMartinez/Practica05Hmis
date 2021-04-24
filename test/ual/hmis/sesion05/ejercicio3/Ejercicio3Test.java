@@ -8,17 +8,12 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 class Ejercicio3Test {
 
-	@ParameterizedTest 
-	@CsvSource({"5, *****",
-				"1, *****",
-				"12, ************",
-				"100, ************"
-				})
-	
-	@Test
+	@ParameterizedTest
+	@CsvSource({ "5, *****", "1, *****", "12, ************", "100, ************" })
+
 	void testPassword(int n, String result) {
 		Ejercicio3 c = new Ejercicio3();
-		assertEquals(result, c.ejer3(n));				
+		assertEquals(result, c.ejer3(n));
 	}
 
 }

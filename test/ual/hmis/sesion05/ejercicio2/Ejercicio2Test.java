@@ -12,26 +12,14 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 class Ejercicio2Test {
 	@ParameterizedTest
-	@CsvSource({"AAA, '123', false",
-				"NombreMuyLargooooooooooooParaElTesttttttttttttttttt, '1234', false",
-				"Usuario, '123456789101112131415161718192021', false",
-				"user, pass11, false",
-				"user123, pass, false",
-				"user, pass, true",
-				"prueba, hackeado, false"
-				})
+	@CsvSource({ "AAA, '123', false", "NombreMuyLargooooooooooooParaElTesttttttttttttttttt, '1234', false",
+			"Usuario, '123456789101112131415161718192021', false", "user, pass11, false", "user123, pass, false",
+			"user, pass, true", "prueba, hackeado, false", "'', pass, false", "user, '', false", "null, pass ,false",
+			"user, null, false", "null, null, false" })
 
-	@Test
 	void testLogin(String user, String pass, boolean result) {
 		Ejercicio2 ejer = new Ejercicio2();
 		assertEquals(result, ejer.login(user, pass));
-	}
-
-	@Test
-	void testCompruebaLoginEnBD() {
-		Ejercicio2 ejer = new Ejercicio2();
-		assertFalse(ejer.login(null, "4334"));
-		assertFalse(ejer.login("guillermo", null));
 	}
 
 }

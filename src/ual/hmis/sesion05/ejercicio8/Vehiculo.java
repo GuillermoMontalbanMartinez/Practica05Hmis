@@ -1,26 +1,53 @@
 package ual.hmis.sesion05.ejercicio8;
 
+/**
+ * @author Usuario
+ *
+ */
 public class Vehiculo {
 	protected int numeroPasajeros;
 	protected int numeroRuedas;
 	protected int pesoConCarga;
-	
+
+	/**
+	 * @return
+	 */
 	public int getNumeroPasajeros() {
 		return numeroPasajeros;
 	}
-	public void setNumeroPasajeros(int numeroPasajeros) {
+
+	/**
+	 * @param numeroPasajeros
+	 */
+	public void setNumeroPasajeros(final int numeroPasajeros) {
 		this.numeroPasajeros = numeroPasajeros;
 	}
+
+	/**
+	 * @return
+	 */
 	public int getNumeroRuedas() {
 		return numeroRuedas;
 	}
-	public void setNumeroRuedas(int numeroRuedas) {
+
+	/**
+	 * @param numeroRuedas
+	 */
+	public void setNumeroRuedas(final int numeroRuedas) {
 		this.numeroRuedas = numeroRuedas;
 	}
+
+	/**
+	 * @return
+	 */
 	public int getPesoConCarga() {
 		return pesoConCarga;
 	}
-	public void setPesoConCarga(int pesoConCarga) {
+
+	/**
+	 * @param pesoConCarga
+	 */
+	public void setPesoConCarga(final int pesoConCarga) {
 		this.pesoConCarga = pesoConCarga;
 	}
 }
