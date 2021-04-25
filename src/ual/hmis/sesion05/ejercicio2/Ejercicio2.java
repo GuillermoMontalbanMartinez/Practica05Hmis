@@ -14,11 +14,13 @@ public class Ejercicio2 {
 	 */
 	public boolean login(final String username, final String password) {
 		// Comprobar que sean distintos de vacio
-		if (username == null || password == null || username.isEmpty() || password.isEmpty()) {
+		if (username == null || password == null || username.isEmpty()
+				|| password.isEmpty()) {
 			return false;
 		}
 		// Comprobar que la longitud sea < 30
-		if (username.length() >= LIMITE || password.length() >= LIMITE) {
+		if (username.length() >= LIMITE || password.length()
+				>= LIMITE) {
 			return false;
 		}
 
@@ -31,11 +33,11 @@ public class Ejercicio2 {
 	 * @param password
 	 * @return boolean
 	 */
-	public boolean compruebaLoginEnBD(final String username, final String password) {
+	public boolean compruebaLoginEnBD(final String username, 
+			final String password) {
 		if (username.equals("user") && password.equals("pass")) {
 			return true;
-		} else {
-			return false;
-		}
+		} 
+		return false;
 	}
 }

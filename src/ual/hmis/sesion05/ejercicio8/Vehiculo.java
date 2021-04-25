@@ -38,7 +38,7 @@ public class Vehiculo {
 	}
 
 	/**
-	 * @return
+	 * @return peso con carga
 	 */
 	public int getPesoConCarga() {
 		return pesoConCarga;

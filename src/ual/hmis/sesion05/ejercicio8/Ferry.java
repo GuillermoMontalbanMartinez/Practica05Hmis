@@ -2,6 +2,10 @@ package ual.hmis.sesion05.ejercicio8;
 
 import java.util.ArrayList;
 
+/**
+ * @author Usuario
+ *
+ */
 public class Ferry {
 	protected int maxPasajeros;
 	protected int maxVehiculos;

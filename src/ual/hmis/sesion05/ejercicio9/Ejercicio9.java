@@ -13,7 +13,8 @@ public class Ejercicio9 {
 	 * @param lista2
 	 * @return resultado
 	 */
-	public static ArrayList<String> listaCadenasOrdenadas(final ArrayList<String> lista1, final ArrayList<String> lista2) {
+	public static ArrayList<String> listaCadenasOrdenadas(final ArrayList<String> lista1,
+			final ArrayList<String> lista2) {
 		ArrayList<String> resultado = new ArrayList<String>();
 		Collections.sort(lista1);
 		Collections.sort(lista2);

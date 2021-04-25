@@ -4,7 +4,7 @@ public class Ejercicio4 {
 	/**
 	 * @param p1
 	 * @param p2
-	 * @return
+	 * @return resultado
 	 */
 	public String unirCadenas(final String p1, final String p2) {
 		String resultado = new String();
