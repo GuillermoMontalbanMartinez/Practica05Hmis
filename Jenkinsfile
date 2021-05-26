@@ -9,9 +9,7 @@ pipeline {
     stage('clone') { 
       steps {
         // Get some code from a GitHub repository
-        sh 'git init'
-        sh 'rm -rf Practica05Hmis'
-        sh 'git clone https://github.com/GuillermoMontalbanMartinez/Practica05Hmis.git'
+        git branch: 'main', credentialsId: 'guillessh', url: 'git@github.com:GuillermoMontalbanMartinez/Practica05Hmis.git'
       }
     }
     stage('clean package') { 
